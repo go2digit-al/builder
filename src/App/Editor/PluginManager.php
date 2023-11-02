@@ -1,6 +1,6 @@
 <?php
 
-namespace Dotlogics\Grapesjs\App\Editor;
+namespace Webkleur\Builder\App\Editor;
 
 class PluginManager
 {

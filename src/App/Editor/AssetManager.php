@@ -1,8 +1,8 @@
 <?php
 
-namespace Dotlogics\Grapesjs\App\Editor;
+namespace Webkleur\Builder\App\Editor;
 
-use Dotlogics\Grapesjs\App\Repositories\AssetRepository;
+use Webkleur\Builder\App\Repositories\AssetRepository;
 
 class AssetManager
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dotlogics\Grapesjs\App\Contracts;
+namespace Webkleur\Builder\App\Contracts;
 
 interface Editable{
     public function getEditorPageTitleAttribute(): string;

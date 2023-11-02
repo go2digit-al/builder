@@ -1,8 +1,8 @@
 <?php
 
-namespace Dotlogics\Grapesjs\App\Editor;
+namespace Webkleur\Builder\App\Editor;
 
-use Dotlogics\Grapesjs\App\Contracts\Editable;
+use Webkleur\Builder\App\Contracts\Editable;
 
 class Config
 {

@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('laravel-grapesjs')
 	->name('laravel-grapesjs.')
 	->middleware('web')
-	->namespace('Dotlogics\Grapesjs\App\Http\Controllers')
+	->namespace('Webkleur\Builder\App\Http\Controllers')
 	->group(function(){
 		Route::post('asset/store', 'AssetController@store')->name('asset.store');
 		Route::get('asset/proxy',  'AssetController@proxy')->name('asset.proxy');

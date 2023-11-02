@@ -1,8 +1,8 @@
 <?php
 
-namespace Dotlogics\Grapesjs\App\Traits;
+namespace Webkleur\Builder\App\Traits;
 
-use Dotlogics\Grapesjs\App\Editor\Config;
+use Webkleur\Builder\App\Editor\Config;
 use Illuminate\Http\Request;
 
 trait EditorTrait{
