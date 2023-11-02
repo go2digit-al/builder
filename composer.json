@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Dotlogics\\Grapesjs\\": "src"
+            "Webkleur\\Builder\\": "src"
         }
     },
     "extra": {
