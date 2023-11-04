@@ -15,8 +15,14 @@ class EditorController extends Controller
 
     public function __construct(Request $request){
         $model = $request->route()->parameters['model'] ?? null;
+
+        if (! method_exists($model, 'setTranslation')) {
+            throw new Exception(
+                'Model does not use HasTranslations trait. Please install spaties/laravel-translatable package.'
+            );
+        }
         
-        if(!empty($model)){
+        if(! empty($model)){
             $request->route()->setParameter('model',  str_replace('-', '\\', $model));
         }
     }
@@ -25,10 +31,14 @@ class EditorController extends Controller
     {
         return $this->show_gjs_editor($request, $model::findOrFail($id));
     }
-    
-    public function store(Request $request, $model, $id)
+
+    public function store(Request $request, $model, $id, $locale = null)
     {
-        return $this->store_gjs_data($request, $model::findOrFail($id));
+        if(empty($locale)){
+            $locale = app()->getLocale();
+        }
+
+        return $this->store_gjs_data($request, $model::findOrFail($id), $locale);
     }
 
     public function templates(Request $request, $model, $id)
@@ -43,7 +53,7 @@ class EditorController extends Controller
                 $type = Str::of($type);
                 $base_path_package_views = __DIR__ . '/../../../resources/views/';
                 $base_path_project_views = resource_path('views/vendor/laravel-grapesjs/');
-                
+
                 $path_getter_method = "get" . $type->studly() . 'Path';
 
                 if(method_exists($model, $path_getter_method)){
@@ -76,7 +86,7 @@ class EditorController extends Controller
                         rtrim($base_path_package_views, '/'),
                         rtrim($base_path_project_views, '/'),
                     ], '');
-                    
+
                     if(!empty('' . $view_base)){
                         $view_base .= '.';
                     }

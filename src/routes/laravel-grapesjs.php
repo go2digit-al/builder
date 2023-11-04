@@ -10,10 +10,10 @@ Route::prefix('laravel-grapesjs')
 	->group(function(){
 		Route::post('asset/store', 'AssetController@store')->name('asset.store');
 		Route::get('asset/proxy',  'AssetController@proxy')->name('asset.proxy');
-		
+
 		Route::get('{model}/{editable}', 'EditorController@editor')->name('model.editor');
-		Route::post('{model}/{editable}', 'EditorController@store')->name('model.store');
-		
+		Route::post('{model}/{editable}/{locale?}', 'EditorController@store')->name('model.store');
+
 		Route::get('{model}/{editable}/templates', 'EditorController@templates')->name('model.templates');
 		Route::get('templates', 'EditorController@templates')->name('templates');
 	});

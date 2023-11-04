@@ -16,14 +16,14 @@ trait EditorTrait{
         return view('laravel-grapesjs::edittor', $data);
     }
 
-	protected function store_gjs_data(Request $request, $model)
-	{	
-		$model->gjs_data = [
+	protected function store_gjs_data(Request $request, $model, $locale)
+	{
+        $model->setTranslation('gjs_data', $locale, [
 	        'components' => $request->get('laravel-grapesjs-components'),
 	        'styles' => $request->get('laravel-grapesjs-styles'),
 	        'css' => $request->get('laravel-grapesjs-css'),
 	        'html' => $request->get('laravel-grapesjs-html'),
-	    ];
+	    ]);
 
 	    $model->save();
 
