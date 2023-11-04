@@ -17,7 +17,7 @@ class EditorController extends Controller
         $model = $request->route()->parameters['model'] ?? null;
 
         if (! method_exists($model, 'setTranslation')) {
-            throw new Exception(
+            throw new \Exception(
                 'Model does not use HasTranslations trait. Please install spaties/laravel-translatable package.'
             );
         }
