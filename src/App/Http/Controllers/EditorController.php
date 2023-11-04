@@ -16,12 +16,6 @@ class EditorController extends Controller
     public function __construct(Request $request){
         $model = $request->route()->parameters['model'] ?? null;
 
-        if (! method_exists($model, 'setTranslation')) {
-            throw new \Exception(
-                'Model does not use HasTranslations trait. Please install spaties/laravel-translatable package.'
-            );
-        }
-        
         if(! empty($model)){
             $request->route()->setParameter('model',  str_replace('-', '\\', $model));
         }
@@ -34,6 +28,12 @@ class EditorController extends Controller
 
     public function store(Request $request, $model, $id, $locale = null)
     {
+        if (! method_exists($model, 'setTranslation')) {
+            throw new \Exception(
+                'Model does not use HasTranslations trait. Please install spaties/laravel-translatable package.'
+            );
+        }
+
         if(empty($locale)){
             $locale = app()->getLocale();
         }
@@ -46,9 +46,9 @@ class EditorController extends Controller
         $model = $model::findOrFail($id);
 
         return collect([
-                'templates',
-                'gjs-blocks',
-            ])
+            'templates',
+            'gjs-blocks',
+        ])
             ->map(function($type) use ($model){
                 $type = Str::of($type);
                 $base_path_package_views = __DIR__ . '/../../../resources/views/';
