@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkleur\Builder\App\Editor;
+namespace Go2Digital\Builder\App\Editor;
 
-use Webkleur\Builder\App\Contracts\Editable;
+use Go2Digital\Builder\App\Contracts\Editable;
 
 class Config
 {

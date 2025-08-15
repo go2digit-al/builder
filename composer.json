@@ -1,5 +1,5 @@
 {
-    "name": "webkleur/builder",
+    "name": "go2digital/builder",
     "description": "A package to easily integrate GrapesJS into your laravel project.",
     "type": "library",
     "require": {
@@ -9,19 +9,19 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Webkleur",
-            "email": "hello@webkleur.com"
+            "name": "Go2Digital",
+            "email": "hello@go2digital.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Webkleur\\Builder\\": "src"
+            "Go2Digital\\Builder\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkleur\\Builder\\GrapesjsServiceProvider"
+                "Go2Digital\\Builder\\GrapesjsServiceProvider"
             ]
         }
     },

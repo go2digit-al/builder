@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkleur\Builder\App\Repositories;
+namespace Go2Digital\Builder\App\Repositories;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

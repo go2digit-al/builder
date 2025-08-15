@@ -5,7 +5,7 @@ export default (editor, opts = {}) => {
     buttons: [
       {
         id: 'set-device-desktop',
-        className: 'fa fa-desktop',
+        className: 'fas fa-desktop',
         attributes: {
           title: 'Desktop',
         },
@@ -13,7 +13,7 @@ export default (editor, opts = {}) => {
       },
       {
         id: 'set-device-tablet',
-        className: 'fa fa-tablet',
+        className: 'fas fa-tablet',
         attributes: {
           title: 'Tablet',
         },
@@ -21,7 +21,7 @@ export default (editor, opts = {}) => {
       },
       {
         id: 'set-device-mobile',
-        className: 'fa fa-mobile',
+        className: 'fas fa-mobile-alt',
         attributes: {
           title: 'Mobile',
         },

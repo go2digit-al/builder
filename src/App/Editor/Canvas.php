@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkleur\Builder\App\Editor;
+namespace Go2Digital\Builder\App\Editor;
 
 class Canvas
 {

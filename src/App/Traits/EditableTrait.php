@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkleur\Builder\App\Traits;
+namespace Go2Digital\Builder\App\Traits;
 
 use DOMDocument;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkleur\Builder\App\Editor;
+namespace Go2Digital\Builder\App\Editor;
 
-use Webkleur\Builder\App\Repositories\AssetRepository;
+use Go2Digital\Builder\App\Repositories\AssetRepository;
 
 class AssetManager
 {

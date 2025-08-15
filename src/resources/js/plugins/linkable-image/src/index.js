@@ -1,8 +1,8 @@
 export default (editor, opts = {}) => {
   const LINK_COMMAND_ID = 'jd-add-link-image';
   const UNLINK_COMMAND_ID = 'jd-remove-link-image';
-  const LINK_TOOL_ICON = 'fa fa-link';
-  const UNLINK_TOOL_ICON = 'fa fa-unlink';
+  const LINK_TOOL_ICON = 'fas fa-link';
+  const UNLINK_TOOL_ICON = 'fas fa-unlink';
 
   editor.on('component:selected', () => {
     const component = editor.getSelected();

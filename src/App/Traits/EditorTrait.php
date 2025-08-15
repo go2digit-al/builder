@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkleur\Builder\App\Traits;
+namespace Go2Digital\Builder\App\Traits;
 
-use Webkleur\Builder\App\Editor\Config;
+use Go2Digital\Builder\App\Editor\Config;
 use Illuminate\Http\Request;
 
 trait EditorTrait{

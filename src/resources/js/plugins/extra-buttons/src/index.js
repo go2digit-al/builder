@@ -2,7 +2,7 @@ export default (editor, opts = {}) => {
   editor.Panels.addButton('options', [
     {
       id: 'undo',
-      className: 'fa fa-undo',
+      className: 'fas fa-undo',
       attributes: {
         title: 'Undo',
       },
@@ -10,7 +10,7 @@ export default (editor, opts = {}) => {
     },
     {
       id: 'redo',
-      className: 'fa fa-repeat',
+      className: 'fas fa-redo',
       attributes: {
         title: 'Redo',
       },
@@ -18,7 +18,7 @@ export default (editor, opts = {}) => {
     },
     {
       id: 'canvas-clear',
-      className: 'fa fa-trash',
+      className: 'fas fa-trash-alt',
       attributes: {
         title: 'Clear Canvas',
       },

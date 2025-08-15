@@ -5,7 +5,7 @@ export default (editor, opts = {}) => {
     type: "iframe",
     content: "<iframe> </iframe>",
     selectable: true,
-    attributes: { class: 'fa fa-file' },
+    attributes: { class: 'fas fa-file' },
   });
 
   editor.DomComponents.addType("iframe", {

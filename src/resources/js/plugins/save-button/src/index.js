@@ -1,7 +1,7 @@
 export default (editor, opts = {}) => {
   editor.Panels.addButton('options', {
     id: 'save',
-    className: 'fa fa-save',
+    className: 'fas fa-save',
     command(editor) {
       editor.store(res => {
         editor.runCommand('notify',{

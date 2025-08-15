@@ -1,6 +1,6 @@
 export default (editor, opts = {}) => {
   let options = {
-    icon: 'fa fa-arrow-left',
+    icon: 'fas fa-arrow-left',
     title: 'Go back',
     link: null,
     ...opts,

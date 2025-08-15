@@ -1,10 +1,10 @@
-# Webkleur Laravel Builder
+# Go2Digital Laravel Builder
 
 This package provide an easy way to integrate [GrapesJS](https://grapesjs.com/) into your laravel project.
 
 ## Installation
 
-> `composer require webkleur/builder`
+> `composer require go2digital/builder`
 
 ## Publish files & migrate
 
@@ -20,8 +20,8 @@ This package provide an easy way to integrate [GrapesJS](https://grapesjs.com/) 
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Webkleur\Builder\App\Traits\EditableTrait;
-use Webkleur\Builder\App\Contracts\Editable;
+use Go2Digital\Builder\App\Traits\EditableTrait;
+use Go2Digital\Builder\App\Contracts\Editable;
 
 class Page extends Model implements Editable
 {
@@ -45,7 +45,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Page;
 use Illuminate\Http\Request;
-use Webkleur\Builder\App\Traits\EditorTrait;
+use Go2Digital\Builder\App\Traits\EditorTrait;
 
 class PageController extends Controller
 {

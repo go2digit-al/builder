@@ -1,6 +1,6 @@
 export default (editor, opts = {}) => {
   const COMMAND_ID = 'jd-open-change_bg-modal';
-  const TOOL_ICON = 'fa fa-image';
+  const TOOL_ICON = 'fas fa-image';
   const BG_IMAGE = 'background-image';
 
   let modal = editor.Modal;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkleur\Builder;
+namespace Go2Digital\Builder;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Blade;

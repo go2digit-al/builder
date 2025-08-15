@@ -1,6 +1,6 @@
 export default (editor, opts = {}) => {
   const options = {
-    btn_icon: 'fa fa-edit',
+    btn_icon: 'fas fa-edit',
     btn_title: 'Edit code.',
     model: {
       title: 'Edit code',

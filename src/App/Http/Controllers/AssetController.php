@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkleur\Builder\App\Http\Controllers;
+namespace Go2Digital\Builder\App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use Webkleur\Builder\App\Repositories\AssetRepository;
+use Go2Digital\Builder\App\Repositories\AssetRepository;
 
 class AssetController extends Controller
 {

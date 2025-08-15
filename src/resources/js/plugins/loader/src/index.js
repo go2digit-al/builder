@@ -28,7 +28,7 @@ export default (editor, opts = {}) => {
     for (var style in options.styles) {
       loader.style[style] = options.styles[style];
     }
-    loader.innerHTML = ' <i class="fa fa-spinner fa-spin"></i>';
+    loader.innerHTML = ' <i class="fas fa-spinner fa-spin"></i>';
   }
 
   let commands = editor.Commands;

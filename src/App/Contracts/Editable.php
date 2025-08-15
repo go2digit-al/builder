@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkleur\Builder\App\Contracts;
+namespace Go2Digital\Builder\App\Contracts;
 
 interface Editable{
     public function getEditorPageTitleAttribute(): string;

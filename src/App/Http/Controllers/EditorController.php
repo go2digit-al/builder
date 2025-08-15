@@ -1,12 +1,12 @@
 <?php
 
-namespace Webkleur\Builder\App\Http\Controllers;
+namespace Go2Digital\Builder\App\Http\Controllers;
 
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use App\Http\Controllers\Controller;
-use Webkleur\Builder\App\Traits\EditorTrait;
+use Go2Digital\Builder\App\Traits\EditorTrait;
 use Illuminate\Support\Facades\View;
 
 class EditorController extends Controller

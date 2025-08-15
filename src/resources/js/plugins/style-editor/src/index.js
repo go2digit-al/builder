@@ -71,7 +71,7 @@ export default (editor, opts = {}) => {
     div.classList.add('jd-style-editor');
     div.innerHTML= `
       <div>
-        <i class="jd-expand-handle fa fa-arrows-h"></i>
+        <i class="jd-expand-handle fas fa-arrows-alt-h"></i>
         <div class="gjs-trt-header">Update styles</div>
       </div>
       <div class="jd-field-containter">
@@ -129,7 +129,7 @@ export default (editor, opts = {}) => {
 
   editor.Panels.addButton('views', {
     id: COMMAND_ID,
-    className: 'fa fa-css3',
+    className: 'fab fa-css3-alt',
     command: COMMAND_ID,
     attributes: {
       title: 'Modify styles'
