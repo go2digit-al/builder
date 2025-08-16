@@ -24,8 +24,8 @@ let plugins = []
 let pluginsOpts = {}
 
 if(config.pluginManager.basicBlocks){
-	plugins.push('gjs-blocks-basic')
-	pluginsOpts['gjs-blocks-basic'] = config.pluginManager.basicBlocks;
+	plugins.push('grapesjs-blocks-basic')
+	pluginsOpts['grapesjs-blocks-basic'] = config.pluginManager.basicBlocks;
 }
 
 if(config.pluginManager.bootstrap4Blocks){
