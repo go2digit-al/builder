@@ -12,6 +12,7 @@ class StorageManager
     public int $stepsBeforeSave = 10;  
     public bool $autoload = false;
     public ?string $urlStore = null;
+    public ?string $urlLoad = null;
     public array $headers = [];
 
     function __construct($save_url = null)
@@ -24,6 +25,7 @@ class StorageManager
         if(!empty($save_url)){
             $this->type = 'remote';
             $this->urlStore = $save_url;
+            $this->urlLoad = $save_url;
         }
     }
 }
