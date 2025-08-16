@@ -25,7 +25,7 @@ mix.sourceMaps(false, 'source-map').js('src/resources/js', 'dist/assets/editor.j
         processCssUrls: false
     });
 
-mix.copyDirectory('node_modules/grapesjs/dist/fonts', 'dist/fonts')
+// mix.copyDirectory('node_modules/grapesjs/dist/fonts', 'dist/fonts') // Removed in GrapesJS v0.22
 mix.copyDirectory('src/resources/js/plugins/image-editor/svg', 'dist/svg')
 
 
