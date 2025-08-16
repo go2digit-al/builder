@@ -47,4 +47,24 @@ export default (editor, opts = {}) => {
       },
     },
   });
+
+  editor.DomComponents.addType('qr_code', {
+    isComponent: el => el.tagName == 'IMG' && el.getAttribute('data') === 'qr-code',
+    model: {
+      defaults: {
+        type: 'qr_code',
+        tagName: 'img',
+        attributes: {
+          'data': 'qr-code',
+        },
+        traits: [
+          {
+            name: 'src',
+            placeholder: 'QR code image URL',
+          },
+          'alt',
+        ],
+      },
+    },
+  });
 };
